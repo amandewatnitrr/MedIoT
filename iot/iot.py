@@ -45,7 +45,7 @@ def update_database():
         firebase = firebase.FirebaseApplication('https://bmp180-1569c-default-rtdb.firebaseio.com', None)
         result = firebase.get('/iot','')
     data = {"temp": sensor.read_temperature(), "pressure": sensor.read_pressure(), "oxysat": oxi_level}                       
-    db.child("patient").child("UID_1").child("iot").set(data)
+    db.child("iot").child("UUID_1").set(data)
     time.sleep(1)
     
 while True:
