@@ -1,12 +1,8 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import LoginPage from './loginPage';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <h1>Let's Start</h1>
-    </div>
-  );
+    <LoginPage/>
+  )
 }
-
-export default App;
