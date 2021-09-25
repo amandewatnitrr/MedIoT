@@ -1,8 +1,8 @@
 # **Team ShellHackers | Shell Hack** :briefcase:
-<a href="https://github.com/amandewatnitrr/MedIoT/tree/master/iot">
+<a href="https://github.com/ShrutiRawal/MedIoT/tree/master/iot">
   <img alt="IoT" width="100px" src="https://img.shields.io/badge/IoT-003E54?style=flat-square&logo=SmartThings&logoColor=white" />
 </a>
-<a href="https://github.com/amandewatnitrr/MedIoT/tree/master/Web/client">
+<a href="https://github.com/ShrutiRawal/MedIoT/tree/master/Web/client">
   <img alt="Web" width="100px" src="https://img.shields.io/badge/Web-FB7A24?style=flat-square&logo=XAMPP&logoColor=white" />
 </a>
 
