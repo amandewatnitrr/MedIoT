@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -6,6 +6,8 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.myapplication.R;
 
 public class LandingActivity extends AppCompatActivity {
 
@@ -19,7 +21,7 @@ public class LandingActivity extends AppCompatActivity {
         loginCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LandingActivity.this,LoginActivity.class);
+                Intent intent = new Intent(LandingActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
@@ -27,7 +29,7 @@ public class LandingActivity extends AppCompatActivity {
         registerCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LandingActivity.this,RegisterActivity.class);
+                Intent intent = new Intent(LandingActivity.this, RegisterActivity.class);
                 startActivity(intent);
             }
         });

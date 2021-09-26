@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".PatientHome">
+    tools:context=".activities.PatientHome">
 
     <TextView
         android:id="@+id/title"
@@ -93,7 +93,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="1dp"
             android:layout_height="100dp"
-            android:id="@+id/prof"
+            android:id="@+id/cdoc"
+            android:onClick="showDoctorList"
             android:layout_weight="50"
             app:cardBackgroundColor="#ff0e47"
             android:layout_margin="20dp" >
@@ -101,8 +102,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/profile"
-                android:text="My Profile"
+                android:id="@+id/doc"
+                android:text="Doctors near me"
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 android:layout_gravity="center"/>
