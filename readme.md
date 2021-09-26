@@ -74,9 +74,9 @@ Domain : Web Developer
 2. Aman Kumar Dewangan - 4th Year (Electrical Engineering)  
 College : National Institute of Technolgy Raipur  
 Domain : IoT Developer
-3. Neeraj Kumar Pathak - 4th Year ( Information Technology)
+3. Neeraj Kumar Pathak - 4th Year (Information Technology)  
 College : National Institute of Technolgy Raipur  
 Domain : Web Developer
-4. Shruti Rawal - 4th Year (Information Technology)
+4. Shruti Rawal- 4th Year (Information Technology)  
 College : National Institute of Technolgy Raipur  
 Domain : Android Developer
