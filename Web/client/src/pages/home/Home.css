@@ -1,6 +1,9 @@
 .home {
     flex: 5;
 }
+.mycontainer {
+    display: flex;
+}
 
 .homeWidgets {
     display: flex;

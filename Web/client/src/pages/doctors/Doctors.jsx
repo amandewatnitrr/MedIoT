@@ -2,6 +2,8 @@ import React from 'react';
 import './Doctors.css';
 import faker from 'faker';
 // import { makeStyles } from '@material-ui/core/styles';
+import Navbar from '../../dashboard/navbar/Navbar';
+import Sidebar from '../../dashboard/sidebar/Sidebar';
 import {
     Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, makeStyles, Avatar,
     Grid, Typography, TablePagination, TableFooter
@@ -70,63 +72,70 @@ export default function Doctors() {
     };
 
     return (
-        <TableContainer component={Paper} className={classes.tableContainer}>
-            <Table sx={{ minWidth: 650 }} aria-label="simple table">
-                <TableHead>
-                    <TableRow>
-                        <TableCell className={classes.tableHeaderCell}>Name</TableCell>
-                        <TableCell className={classes.tableHeaderCell}>City</TableCell>
-                        <TableCell className={classes.tableHeaderCell}>Doctor ID</TableCell>
-                        <TableCell className={classes.tableHeaderCell}>Get Help</TableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {DOCTORS.map((row) => (
-                        <TableRow key={row.name}
-                        // sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                        >
-                            <TableCell>
-                                <Grid container>
-                                    <Grid item lg={2}>
-                                        <Avatar alt={row.name} src='.' className={classes.avatar} />
-                                    </Grid>
-                                    <Grid item lg={10}>
-                                        <Typography className={classes.name}>{row.name}</Typography>
-                                        <Typography color="textSecondary" variant="body2">{row.email}</Typography>
-                                        <Typography color="textSecondary" variant="body2">{row.phone}</Typography>
-                                    </Grid>
-                                </Grid>
-                            </TableCell>
-                            <TableCell>
-                                <Typography color="primary" variant="subtitle2">{row.city}</Typography>
-                                <Typography color="textSecondary" variant="body2">{row.country}</Typography>
-                            </TableCell>
-                            <TableCell>{row.doctorid}</TableCell>
-                            <TableCell>
-                                <Typography
-                                    className={classes.status}
-                                    style={{
-                                        backgroundColor:
-                                            ((row.status === 'Online' && 'green') ||
-                                                (row.status === 'Offline' && 'orange'))
-                                    }}
-                                >{row.status}</Typography>
-                            </TableCell>
-                        </TableRow>
-                    ))}
-                </TableBody>
-                <TableFooter>
-                    <TablePagination
-                        rowsPerPageOptions={[5, 10, 15]}
-                        component="div"
-                        count={DOCTORS.length}
-                        rowsPerPage={rowsPerPage}
-                        page={page}
-                        onChangePage={handleChangePage}
-                        onChangeRowsPerPage={handleChangeRowsPerPage}
-                    />
-                </TableFooter>
-            </Table>
-        </TableContainer>
+        <div>
+            <Navbar />
+            <div className="mycontainer">
+                <Sidebar />
+                <TableContainer component={Paper} className={classes.tableContainer}>
+                    <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                        <TableHead>
+                            <TableRow>
+                                <TableCell className={classes.tableHeaderCell}>Name</TableCell>
+                                <TableCell className={classes.tableHeaderCell}>City</TableCell>
+                                <TableCell className={classes.tableHeaderCell}>Doctor ID</TableCell>
+                                <TableCell className={classes.tableHeaderCell}>Get Help</TableCell>
+                            </TableRow>
+                        </TableHead>
+                        <TableBody>
+                            {DOCTORS.map((row) => (
+                                <TableRow key={row.name}
+                                // sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                >
+                                    <TableCell>
+                                        <Grid container>
+                                            <Grid item lg={2}>
+                                                <Avatar alt={row.name} src='.' className={classes.avatar} />
+                                            </Grid>
+                                            <Grid item lg={10}>
+                                                <Typography className={classes.name}>{row.name}</Typography>
+                                                <Typography color="textSecondary" variant="body2">{row.email}</Typography>
+                                                <Typography color="textSecondary" variant="body2">{row.phone}</Typography>
+                                            </Grid>
+                                        </Grid>
+                                    </TableCell>
+                                    <TableCell>
+                                        <Typography color="primary" variant="subtitle2">{row.city}</Typography>
+                                        <Typography color="textSecondary" variant="body2">{row.country}</Typography>
+                                    </TableCell>
+                                    <TableCell>{row.doctorid}</TableCell>
+                                    <TableCell>
+                                        <Typography
+                                            className={classes.status}
+                                            style={{
+                                                backgroundColor:
+                                                    ((row.status === 'Online' && 'green') ||
+                                                        (row.status === 'Offline' && 'orange'))
+                                            }}
+                                        >{row.status}</Typography>
+                                    </TableCell>
+                                </TableRow>
+                            ))}
+                        </TableBody>
+                        <TableFooter>
+                            <TablePagination
+                                rowsPerPageOptions={[5, 10, 15]}
+                                component="div"
+                                count={DOCTORS.length}
+                                rowsPerPage={rowsPerPage}
+                                page={page}
+                                onChangePage={handleChangePage}
+                                onChangeRowsPerPage={handleChangeRowsPerPage}
+                            />
+                        </TableFooter>
+                    </Table>
+                </TableContainer>
+            </div>
+
+        </div>
     );
 }

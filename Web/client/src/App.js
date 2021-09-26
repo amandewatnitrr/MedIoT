@@ -6,24 +6,24 @@ import UserDash from './pages/home/Home';
 import Doctors from './pages/doctors/Doctors';
 
 export default function App() {
-  return (
-    <Router>
-      <Switch>
-      <Route exact path="/">
-        <Home></Home>
-      </Route>
-      <Route exact path="/login">
-        <LoginPage/>
-      </Route>
-      <Route exact path="/user">
-        <UserDash></UserDash>
-      </Route>
-      <Route exact path="/doctors">
-        <Doctors/>
-      </Route>
+    return (
+        <Router>
+            <Switch>
+                <Route exact path="/">
+                    <Home></Home>
+                </Route>
+                <Route exact path="/login">
+                    <LoginPage />
+                </Route>
+                <Route exact path="/user">
+                    <UserDash></UserDash>
+                </Route>
+                <Route exact path="/doctors">
+                    <Doctors />
+                </Route>
 
-      </Switch>
+            </Switch>
 
-    </Router>
-  )
+        </Router>
+    )
 }
