@@ -1,20 +1,32 @@
-import React from 'react'
-import { Container, Nav, Navbar } from 'react-bootstrap'
+import React,{useState} from 'react'
+import { Button, Container, Nav, Navbar } from 'react-bootstrap'
+import "./homeHeader.css";
+import { Redirect } from 'react-router-dom';
 
-export default function homeHeader() {
+export default function HomeHeader() {
+    const [redirect,setRedirect] = useState(false);
     return (
-        <Navbar collapseOnSelect fixed='top' expand='sm' bg='dark' variant='dark'>
-        <Container>
-            <Navbar.Toggle aria-controls='responsive-navbar-nav'/> 
-                <Navbar.Collapse id='responsive-navbar-nav'>
-                <Nav>
-                    <Nav.Link href='/'>Home</Nav.Link>
-                    <Nav.Link href='/login'>Login</Nav.Link>
-                </Nav>
-                </Navbar.Collapse>
-   
-        </Container>
-
-        </Navbar>
+        <>
+        {
+        redirect
+        ?
+        (<Redirect to='/login'/>)
+        :
+        null
+      }
+        <div className="navbar">
+            <div className="navbarWrapper">
+                <div className="navLeft">
+                    <span className="logo">MedIoT</span>
+                </div>
+                <div className="navRight">
+                    <div className="navbarIconContainer">
+                       <Button variant="success" size="lg" onClick={()=>{setRedirect(true)}}>Login</Button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        </>
     )
 }

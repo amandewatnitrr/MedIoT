@@ -9,8 +9,8 @@ export default function loginDoctorCard() {
           <Card.Title style={{fontWeight:"bold", fontSize:"30px"}}>For Doctors</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">Your tool for remote monitoring</Card.Subtitle>
           <Card.Text>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
+          Providing and efficient solution to remote healthcare system. We have all the best doctors you can think of.
+                    We provide the best healthcare at your fingertips.
           </Card.Text>
         </Card.Body>
       </Card>

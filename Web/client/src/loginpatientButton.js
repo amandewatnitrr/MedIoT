@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import { Button, Modal, Container, Row, Col } from 'react-bootstrap'
+import { Redirect } from 'react-router-dom';
 
 export default function LoginpatientButton() {
   const [show, setShow] = useState(false);
+  const [redirect,setRedirect] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -11,10 +13,19 @@ export default function LoginpatientButton() {
      * We can implement login functionality in this function
      * Matching from firebase can be done
      */
-    console.log("Patient login");
+     console.log("Patient login");
+    setRedirect(true);
+    
   }
   return (
     <>
+      {
+        redirect
+        ?
+        (<Redirect to='/user'/>)
+        :
+        null
+      }
       <Button variant="success" size="lg" onClick={handleShow}>Login</Button>
       <Modal show={show} onHide={handleClose} style={{ opacity: 1, top: "20%" }} backdrop="static"
         keyboard={false}>

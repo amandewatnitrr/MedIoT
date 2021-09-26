@@ -8,7 +8,7 @@ import LoginpatientButton from './loginpatientButton';
 
 export default function Login() {
     return (
-        <Container>
+        <Container style={{marginTop:"10%",marginLeft:"15%"}}>
             <Row>
                 <Col md={6}>
                     <h1>Login</h1>
