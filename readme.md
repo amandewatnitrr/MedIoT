@@ -41,7 +41,9 @@ The IoT system connects to the cloud that lets the authenticated person keep a r
 
 The website offers people better access to healthcare support beyond their bounds of convenience and connects them to doctors, specialists and healthcare experts on a digital platform, which provides them access to an online expert without a physical visit. For doctors, it includes a feature to view-track the medical record of the patient regularly and efficiently.
 
-## Features of MedIoT :
+## Product :
+1. IoT hardware setup - To be worn by the user
+2. Website and Android App - For health monitoring and medical consultation
 
 ## Tech Stack be used :
 ![Python](https://img.shields.io/badge/Python-9FEF00?style=flat-square&logo=Python&logoColor=black)
@@ -66,9 +68,15 @@ MedIoT would be available both as a product and service for the customers. The c
 ## Team Members - Domains :family_man_boy_boy:
 <img align="right" src="https://github.com/amandewatnitrr/evolution-hacknitr/blob/main/imgs/desk-loop.gif" width="40%"/>
 
-1. Sanjeeb Nath - 3rd Year (Computer Science Engineering)  
+1. Sanjeeb Nath - 4th Year (Computer Science Engineering)  
 College : National Institute of Technolgy Raipur  
 Domain : Web Developer
-2. Aman Kumar Dewangan - 3rd Year (Electrical Engineering)  
+2. Aman Kumar Dewangan - 4th Year (Electrical Engineering)  
 College : National Institute of Technolgy Raipur  
 Domain : IoT Developer
+3. Neeraj Kumar Pathak - 4th Year ( Information Technology)
+College : National Institute of Technolgy Raipur  
+Domain : Web Developer
+4. Shruti Rawal - 4th Year (Information Technology)
+College : National Institute of Technolgy Raipur  
+Domain : Android Developer
