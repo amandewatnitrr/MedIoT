@@ -5,6 +5,9 @@
 <a href="https://github.com/ShrutiRawal/MedIoT/tree/master/Web/client">
   <img alt="Web" width="100px" src="https://img.shields.io/badge/Web-FB7A24?style=flat-square&logo=XAMPP&logoColor=white" />
 </a>
+<a href="https://github.com/ShrutiRawal/MedIoT/tree/master/Web/client">
+  <img alt="Web" width="100px" src="https://img.shields.io/badge/Web-FB7A24?style=flat-square&logo=Android&logoColor=white" />
+</a>
 
 ## Track :  :woman_health_worker:
 ![](https://github.com/amandewatnitrr/evolution-hacknitr/blob/main/imgs/ClipartKey_2434520.png)
