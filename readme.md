@@ -6,7 +6,7 @@
   <img alt="Web" width="100px" src="https://img.shields.io/badge/Web-FB7A24?style=flat-square&logo=XAMPP&logoColor=white" />
 </a>
 <a href="https://github.com/ShrutiRawal/MedIoT/tree/master/Web/client">
-  <img alt="Web" width="100px" src="https://img.shields.io/badge/Web-FB7A24?style=flat-square&logo=Android&logoColor=white" />
+  <img alt="Web" width="100px" src="https://img.shields.io/badge/Web-3DDC84?style=flat-square&logo=Android&logoColor=white" />
 </a>
 
 ## Track :  :woman_health_worker:
